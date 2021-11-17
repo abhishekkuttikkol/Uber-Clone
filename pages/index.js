@@ -1,5 +1,6 @@
 import tw from "tailwind-styled-components";
 import Map from "./Components/Map";
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -14,10 +15,12 @@ export default function Home() {
           </Profile>
         </Header>
         <ActionButtons>
+          <Link href="/Search">
           <ActionButton>
             <ActionButtonImage src={"https://i.ibb.co/cyvcpfF/uberx.png"} />
             Ride
           </ActionButton>
+          </Link>
           <ActionButton>
             <ActionButtonImage src={"https://i.ibb.co/n776JLm/bike.png"} />
             Wheels
